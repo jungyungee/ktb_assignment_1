@@ -21,11 +21,11 @@ public class PremiumBus extends Bus {
 
         if (seat == 1){
             isOneSeat = true;
-            System.out.println("1인석 선택");
+            System.out.println("1인석을 선택하셨습니다.");
         }
         else if (seat == 2){
             isOneSeat = false;
-            System.out.println("2인석 선택");
+            System.out.println("2인석을 선택하셨습니다.");
         }
         else {
             System.out.println("1 또는 2를 입력해주세요");

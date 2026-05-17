@@ -39,7 +39,6 @@ public class Main {
                     Saemaeul saemaeul = new Saemaeul();
 
                     train.selectRoom(sc);
-                    saemaeul.printStopInfo();
                     saemaeul.printInfo();
                     saemaeul.book();
                     System.out.println("예매가 완료되었습니다,");
@@ -58,7 +57,6 @@ public class Main {
 
                 if (busType == 1){
                     NormalBus normalBus = new NormalBus();
-                    normalBus.printStopInfo();
                     normalBus.printInfo();
                     normalBus.book();
                     System.out.println("예매가 완료되었습니다,");
