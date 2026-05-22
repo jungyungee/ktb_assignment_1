@@ -3,14 +3,15 @@ package org.example;
 import java.util.Scanner;
 
 public class PremiumBus extends Bus {
+    private boolean isOneSeat; // 1인석 여부
 
-    private boolean isOneSeat;
-
+    // 생성자를 통한 프리미엄 버스의 가격과 시간 설정
     public PremiumBus(){
         this.time = "2시간 50분";
         this.price = 18000;
     }
 
+    // 좌석 종류 선택 메소드
     public void selectSeat(Scanner sc){
 
         System.out.println("좌석 선택");
@@ -32,6 +33,7 @@ public class PremiumBus extends Bus {
         }
     }
 
+    // 부모 클래스의 printInfo 메소드에 좌석 정보를 추가하기 위해 오버라이딩
     @Override
     public void printInfo(){
         super.printInfo();

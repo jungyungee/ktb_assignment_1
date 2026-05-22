@@ -3,13 +3,15 @@ package org.example;
 import java.util.Scanner;
 
 public class KTX extends Train{
-    private boolean isSpecial;
+    private boolean isSpecial; //특실 여부
 
+    // 생성자를 통한 KTX의 요금과 시간 설정
     public KTX(){
         this.time = "2시간";
         this.price = 23700;
     }
 
+    // 특실, 일반실 선택 메소드
     public void selectSeatType(Scanner sc){
         System.out.println("특실과 일반실 중 선택가능합니다.");
         System.out.println("1. 특실(1-2호차)");
@@ -26,6 +28,7 @@ public class KTX extends Train{
         }
     }
 
+    // 부모 클래스의 printInfo 메서드에 특실여부를 추가
     @Override
     public void printInfo(){
         super.printInfo();
